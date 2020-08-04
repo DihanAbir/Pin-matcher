@@ -144,6 +144,9 @@
                     document.getElementById("matched-counter").innerText = matchedCounter ;
                     if(matchedCounter == 0){
                         document.getElementById("submit-btn").style.display = "none";
+                        generateRandomPin.addEventListener("click", function(){
+                            window.location.reload();
+                        })
                     }
                 })
 
